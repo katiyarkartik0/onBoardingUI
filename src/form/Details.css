@@ -1,0 +1,8 @@
+.signupForm{
+    width: 350px;
+    margin:auto;
+    margin-top: 172px;
+
+    padding: 20px;
+    box-shadow: 0 0 3px 0 rgba(56, 34, 34, 0.7);
+}
