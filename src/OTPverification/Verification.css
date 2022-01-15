@@ -1,3 +1,4 @@
+
 .void{
     width:100px;
     height: 100px;
@@ -14,11 +15,19 @@
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
-    box-shadow: 0 0 3px 0 rgba(56, 34, 34, 0.7);
+    
+}
+.instruction_otp{
+    width: fit-content;
+    position: absolute;
+    top:10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .box{
     padding-bottom: 10px;
     padding-top: 180px;
+    background-color: #f3f6f8;
 
     top: 100px;
     width: 80vw;
@@ -34,6 +43,7 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 3px 0 rgba(56, 34, 34, 0.7);
+    border: none;
 }
 .instruction{
     width: fit-content;
@@ -41,4 +51,16 @@
     top:140px;
     left: 50%;
     transform: translateX(-50%);
+}
+.proceed_v{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 85%;
+    top: 311px
+}
+.back_v{
+position: absolute;
+transform: translateX(-50%);
+left: 15%;
+top: 311px
 }

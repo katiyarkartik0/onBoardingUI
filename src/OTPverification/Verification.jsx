@@ -1,10 +1,12 @@
 import React from 'react'
 import './Verification.css'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 const Verification = (props) => {
     console.log(props)
     let [otp, setOtp] = useState([]);
     console.log(otp);
+    let navigate = useNavigate();
 
     return (
         <>
@@ -43,7 +45,19 @@ const Verification = (props) => {
                         className="void card_small"></input>
 
                 </div>
-                <div className='instruction'><h2>enter code sent to {props.user.number}</h2></div>
+                <div className='instruction_otp'><h2>OTP verification</h2></div>
+
+                <div className='instruction'><h4>enter code sent to {props.user.number}</h4></div>
+                <button
+                  onClick={()=>{
+                    navigate('/interests');
+                }}
+                    type="submit" className="btn btn-primary back_v">Back</button>
+                <button
+                  onClick={()=>{
+                    navigate('/interests');
+                }}
+                    type="submit" className="btn btn-primary proceed_v">Proceed</button>
             </div>
         </>
     )
