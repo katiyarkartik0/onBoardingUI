@@ -10,7 +10,11 @@ const Verification = (props) => {
 
     return (
         <>
+        <div className='page' >
+            <img className='image' src="https://scontent.fdel45-1.fna.fbcdn.net/v/t1.6435-9/197153712_4239852796064665_3190510697905546615_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=e3f864&_nc_ohc=MrjpcuLA3bMAX-wDBOA&_nc_ht=scontent.fdel45-1.fna&oh=00_AT_I1y1jMFueGF_HE6YHV38adHXrXjfbiEqRM3p86vA7Cg&oe=620A1B45" ></img>
             <div className='box'>
+            <img className='logo' src="https://careerninja.in/wp-content/uploads/2019/02/Logo-unit-_-white-BG-copy-1.png" ></img>
+
                 <div className='container'>
                     <input
                         //value={otp}
@@ -58,6 +62,7 @@ const Verification = (props) => {
                     navigate('/interests');
                 }}
                     type="submit" className="btn btn-primary proceed_v">Proceed</button>
+            </div>
             </div>
         </>
     )

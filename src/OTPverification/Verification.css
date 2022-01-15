@@ -1,3 +1,11 @@
+body{
+    filter: contrast(100%);
+}
+.image{
+    filter: blur(9px);
+    height: 100vh;
+    width:100vw;
+}
 
 .void{
     width:100px;
@@ -15,7 +23,6 @@
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
-    
 }
 .instruction_otp{
     width: fit-content;
@@ -27,16 +34,21 @@
 .box{
     padding-bottom: 10px;
     padding-top: 180px;
-    background-color: #f3f6f8;
-
     top: 100px;
-    width: 80vw;
+    width: 70vw;
     height: 400px;
     position:absolute;
     left: 50%;
     transform: translateX(-50%);
     justify-content: center;
-    box-shadow: 0 0 3px 0 rgba(56, 34, 34, 0.7);
+    background-color: white;
+}
+.logo{
+    height: 10vh;;
+    top: 58px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute
 }
 .card_small{
     display: flex;
@@ -44,6 +56,7 @@
     justify-content: center;
     box-shadow: 0 0 3px 0 rgba(56, 34, 34, 0.7);
     border: none;
+
 }
 .instruction{
     width: fit-content;
