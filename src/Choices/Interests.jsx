@@ -45,6 +45,9 @@ const Interests = (props) => {
                     }}
                     type="submit" className="btn btn-primary back">Back</button>
                 <button
+                                    onClick={() => {
+                                        navigate('/otp');
+                                    }}
                     type="submit" className="btn btn-primary proceed">Proceed</button>
             </div>
             <div>
