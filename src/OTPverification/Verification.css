@@ -41,7 +41,7 @@ body{
     left: 50%;
     transform: translateX(-50%);
     justify-content: center;
-    background-color: white;
+    background-color: #f3f6f8;
 }
 .logo{
     height: 10vh;;

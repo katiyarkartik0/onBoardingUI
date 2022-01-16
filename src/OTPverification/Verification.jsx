@@ -55,11 +55,15 @@ const Verification = (props) => {
                 <button
                   onClick={()=>{
                     navigate('/interests');
+                    props.pageNo(1)
+
                 }}
                     type="submit" className="btn btn-primary back_v">Back</button>
                 <button
                   onClick={()=>{
-                    navigate('/interests');
+                    navigate('/success');
+                    props.pageNo(3)
+
                 }}
                     type="submit" className="btn btn-primary proceed_v">Proceed</button>
             </div>

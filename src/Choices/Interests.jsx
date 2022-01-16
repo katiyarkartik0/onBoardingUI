@@ -9,6 +9,8 @@ const Interests = (props) => {
     console.log(interestArr);
     return (
         <>
+                    <img className='bg' src="https://thumbs.dreamstime.com/b/background-suitable-web-design-users-other-designs-abstract-modern-gradient-color-dynamic-website-templates-178397590.jpg" ></img>
+
             <div class="pin_container">
                 <div className={interestArr.includes('Home décor') ? "card card_small_2" : "card card_small"}
                     onClick={() => setInterestArr(oldArray => [...oldArray, 'Home décor'])}
@@ -42,16 +44,21 @@ const Interests = (props) => {
                 <button
                     onClick={() => {
                         navigate('/');
+                        props.pageNo(0)
+
                     }}
                     type="submit" className="btn btn-primary back">Back</button>
                 <button
                     onClick={() => {
                         navigate('/otp');
+                        props.pageNo(2)
+                        props.sendArr(interestArr);
                     }}
+                    
                     type="submit" className="btn btn-primary proceed">Proceed</button>
             </div>
-            <div>
-                <h3>Hey!{props.user.displayName}</h3>
+            <div className='address'>
+                <h3>Hey! {props.user.displayName} please care to tell us your interests/hobbies</h3>
             </div>
         </>
     )

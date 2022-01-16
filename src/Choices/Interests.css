@@ -2,18 +2,22 @@
     --card_width: 250px;
     --row_increment: 10px;
     --card_border_radius: 16px;
-    --card_small: 15;
-    --card_medium: 20;
-    --card_large: 25;
+    --card_small: 10;
+    --card_medium: 15;
+    --card_large: 20;
 }
+body{
+    font-family: 'Raleway', sans-serif;}
 .pin_container {
     top: 100px;
     margin: 0;
-    padding: 0;
+    padding-top: 80px;
     width: 80vw;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    box-shadow: 0 0 3px 0 rgba(56, 34, 34, 0.7);
+    background-color: #f3f6f8;
 
     display: grid;
     grid-template-columns: repeat(auto-fill, var(--card_width));
@@ -39,7 +43,7 @@
     justify-content: center;
     grid-row-end: span var(--card_small);
     box-shadow: 0 0 3px 0 rgba(56, 34, 34, 0.7);
-    background-color: darkslateblue;
+    background-color: rgb(161, 161, 253);
 }
 .card_medium{
     display: flex;
@@ -70,9 +74,22 @@
     justify-content: center;
     grid-row-end: span var(--card_large);
     box-shadow: 0 0 3px 0 rgba(56, 34, 34, 0.7);
-    background-color: chartreuse;
+    background-color: rgb(255, 0, 200);
 }
 .proceed{
-    top:100px;
-    float:right;
+    position: absolute;
+transform: translateX(83vw);
+top:80vh;
+}
+
+.back{
+    position: absolute;
+    transform: translateX(12vw);
+top:80vh;
+}
+.address{
+    position: absolute;
+    transform: translateX(-50%);
+    left:50%;
+    top:14vh;
 }
